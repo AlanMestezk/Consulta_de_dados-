@@ -1,0 +1,15 @@
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\bin\Debug\net6.0\@NetAsp.exe
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\bin\Debug\net6.0\@NetAsp.deps.json
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\bin\Debug\net6.0\@NetAsp.runtimeconfig.json
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\bin\Debug\net6.0\@NetAsp.dll
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\bin\Debug\net6.0\@NetAsp.pdb
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.csproj.AssemblyReference.cache
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.AssemblyInfoInputs.cache
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.AssemblyInfo.cs
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.csproj.CoreCompileInputs.cache
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.dll
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\refint\@NetAsp.dll
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.pdb
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\@NetAsp.genruntimeconfig.cache
+C:\Users\andre\Downloads\c#\@NetAsp\@NetAsp\obj\Debug\net6.0\ref\@NetAsp.dll
