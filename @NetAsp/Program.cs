@@ -38,46 +38,47 @@ namespace _NetAsp
             var re = products.Where(p => p.Price >= 300.00);
             Print("Preços maior ou igual a 300: ", re);
 
-            var r1 = products.Where(p => p.Category.Tier == 3 && p.Price <= 300.00);
+            var r1 =
+                from p in products
+                where p.Category.Tier == 1 && p.Price < 300.00
+                select p;
             Print("Qualidade 3 e com menos de 300 reais", r1);
 
-            var r2 = products.Where(p => p.Category.Name == "Eletrônicos")
-                .Select(p => p.Name);
-            Print("Eletrônicos", r2);
 
-            //colocando apelido no nome da categoria
-            var r3 = products.Where(p => p.Name[0] == 'C')
-                .Select(p => new { p.Name, p.Price, CategoryName = p.Category.Name });
+            var r2 =
+                from p in products
+                where p.Category.Name == "Eletrônicos"
+                select p.Name;
+            Print("Eletrônicos: ", r2);
+
+
+            var r3 =
+                from p in products
+                where p.Name[0] == 'C'
+                select new
+                {
+                    p.Name,
+                    p.Price,
+                    CategoryName = p.Category.Name
+
+                };
             Print("Objetos começando com c", r3);
 
-            var r4 = products.Where(p => p.Category.Tier == 1)
-                .OrderBy(p=> p.Price);
+            var r4 =
+                from p in products
+                where p.Category.Tier == 1
+                orderby p.Name
+                orderby p.Price
+                select p;
             Print("Valor em ordem crescente", r4);
 
-            var r5 = r4.Skip(1).Take(3);
+            var r5 =
+                (from p in r4
+                select p).
+                Skip(1).Take(3);
             Print("Pular do 1 para o 3", r5);
 
-            var r10 = products.Max(p => p.Price);
-            Console.WriteLine("Maior preço " + r10);
-
-            var r11 = products.Min(p => p.Price);
-            Console.WriteLine("Menor preço " + r11);
-
-
-            var r12 = products.Where(p => p.Category.Id == 1)
-                .Sum(p => p.Price);
-            Console.WriteLine("Soma dos preços da categoria 1: "+ r12);
-
-            var r13 = products.Where(p => p.Category.Id == 2)
-                .Average(p => p.Price);
-            Console.WriteLine("Media dos preços da categoria 2: " + r13);
-
-            var r14 = products.Where(p => p.Category.Id == 3)
-                .Select(p => p.Price)
-                .DefaultIfEmpty(0.0)
-                .Average();
-            Console.WriteLine("Media dos preços da categoria 3 se não existir, retorne 0: " + r13);
-       
+            
         }
     }
 }
